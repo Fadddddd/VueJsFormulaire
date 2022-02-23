@@ -4,11 +4,13 @@
     <button v-on:click="say('experiences')">Expériences</button>
     <button v-on:click="say('formations')">Formations</button>
     <button v-on:click="say('divers')">Divers</button>
+    <button v-on:click="say('Formulaire')">Formulaire</button>
 
     <Accueil v-if="elementForm == 'competences'"/>
     <Apropos v-if="elementForm == 'experiences'"/>
     <MentionLegale v-if="elementForm == 'formations'"/>
     <Connexion v-if="elementForm == 'divers'"/>
+    <Connexion v-if="elementForm == 'Formulaire'"/>
 
   </div>
 
@@ -19,6 +21,7 @@ import competences from './elementForm/competences.vue'
 import experiences from './elementForm/experiences.vue'
 import divers from './elementForm/divers.vue'
 import formations from './elementForm/formations.vue'
+import Formulaire from './elementForm/Formulaire.vue'
 
 
 export default {
@@ -27,7 +30,8 @@ export default {
     competences,
     experiences,
     divers,
-    formations
+    formations,
+    Formulaire
   },
   data(){
     return{

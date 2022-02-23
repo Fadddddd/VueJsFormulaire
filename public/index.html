@@ -13,5 +13,23 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <table id="firstTable">
+      <thead>
+        <tr>
+          <th>Compétences</th>
+          <th>Formation</th>
+          <th>Divers</th>
+          <th>Expériences</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="row in rows">
+          <td>{{row.cptces}}</td>
+          <td>{{row.formation}}</td>
+          <td>{{row.divers}}</td>
+          <td>{{row.experiences}}</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>

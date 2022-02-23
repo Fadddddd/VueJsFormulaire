@@ -6,11 +6,13 @@
     <button v-on:click="say('apropos')">apropos</button>
     <button v-on:click="say('mentionLegale')">mentionLegale</button>
     <button v-on:click="say('connexion')">connexion</button>
+    <button v-on:click="say('Formulaire')">Formulaire</button>
 
     <Accueil v-if="pageMenu == 'accueil'"/>
     <Apropos v-if="pageMenu == 'apropos'"/>
     <MentionLegale v-if="pageMenu == 'mentionLegale'"/>
     <Connexion v-if="pageMenu == 'connexion'"/>
+    <Formulaire v-if="pageMenu == 'Formulaire'"/>
     <Footer />
   </div>
 
@@ -22,6 +24,7 @@ import Apropos from './pages/Apropos.vue'
 import MentionLegale from './pages/MentionLegale.vue'
 import Connexion from './pages/Connexion.vue'
 import Header from './template/Header'
+import Formulaire from './pages/Formulaire.vue'
 import Footer from './template/Footer'
 // import { mapState } from 'vuex';
 
@@ -32,6 +35,7 @@ export default {
     Apropos,
     MentionLegale,
     Connexion,
+    Formulaire,
     Header,
     Footer,
   },
